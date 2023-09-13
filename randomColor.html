@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me Decide Your OOTD</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="color-card">
+            <i class="fa-regular fa-face-grin-hearts"></i>
+        </div>
+        <div class="content">
+            <span id="hex">#474747</span>     
+            <button>Pick a Different Color</button>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Faye. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+    <script>
+        var container = document.querySelector('.container');
+        var colorCard = document.querySelector('.color-card');
+        var btn = document.querySelector('button');
+        var hex = document.querySelector('span');  
+
+        function getNewColor(){
+            var symbols = '0123456789ABCDEF';
+            
+            var color = '#';
+            
+            for (var i=0; i<6; i++){
+                color = color + symbols[Math.floor(Math.random()* 16)];
+            }
+            document.body.style.background = color;
+            colorCard.style.background = color;
+            hex.innerHTML = color;
+        }
+        btn.addEventListener("click", getNewColor);
+
+    </script>
+</body>
+</html>

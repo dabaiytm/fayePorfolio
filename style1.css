@@ -1,0 +1,108 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ab8f80;
+}
+
+.container{
+    height: 320px;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+}
+.color-card{
+    background: #ab8f80;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 55px;
+    left: -50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
+    border-radius: 30px 0 30px 30px;
+}
+.color-card i{
+    color: coral;
+    font-size: 100px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-left: 150px;
+}
+#hex{
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    margin: 20px;
+    text-transform: uppercase;
+}
+button{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 8px 20px;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+.copyright{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    background: #fff;
+    font-weight: 300;
+}
+.copyright i{
+    color: tomato;
+}
+
+
+/*--------for mobile---------
+
+@media only screen and (max-width: 600px){
+.container{
+    width: 50%;
+    height: 50%;
+}
+.color-card{
+    width: 50%;
+    height: 30%;
+}
+.content id{
+    font-size: 5px;
+}
+
+}*/
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 40%; 
+        height: 60%; 
+    }
+    .color-card {
+        width: 50%; 
+        height: 27%; 
+    }
+    .content {
+        margin-left: 0; 
+    }
+    #hex {
+        font-size: 18px;
+    }
+    button {
+        font-size: 13px; 
+    }
+    .fa-regular.fa-face-grin-hearts {
+        font-size: 40px; 
+    }
+}

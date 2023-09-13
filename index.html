@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faye's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- this is to link html to css style-->
+    <script src="https://kit.fontawesome.com/8b23a58bda.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  <div id="header">
+    <div class="container">  
+        <nav>
+            <img src="images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> <!-- this is to link text-->
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Strength</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-regular fa-square-caret-down" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi!<br>This is <span>Faye,</span><br>A computer science enthusiast.</h1>
+            <p>"Embrace the journey, engineer your dreams."</p>
+        </div>
+    </div>
+</div>
+<!----------------------about---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Faye Yao from Shanghai, China, currently pursuing a bachelor's degree in Computer Science in the United States. My passion for problem-solving, programming languages, algorithms, and mathematics drives my journey as a software engineer. I'm eager to contribute my skills and creativity to innovative projects, collaborate with like-minded individuals, and make a meaningful impact in the ever-evolving tech world.</p> <!--description part-->
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Courses</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, C, Python, JavaScript, HTML, CSS, Linux, Assembly</li>
+                        <li><span>Software Development</span><br>Algorithm, Problem Solving, Code Reviews, Front End</li>
+                        <li><span>Project and Collaboration</span><br>Project Management, Teamwork and Communication</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Core Computer Science Courses</span><br>Object-oriented Design and Programming, Data Structure, Algorithms, Software Engineering</li>
+                        <li><span>Mathematics Courses</span><br>Calculus 1&2, Linear Algebra, Probability & Statistics</li>
+                        <li><span>Computer Organization Courses</span><br>Computer Organization & Architecture, Operation System</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Georgia, USA</span><br>Georgia State University</li>
+                        <li><span>Shanghai, China</span><br>Shanghai Dianji Univeristy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------strength---------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Strength</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h2>Coding Proficiency</h2>
+                <p>A strong ability to write clean, efficient code in various programming languages, demonstrated through projects and competitions.</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h2>Problem-Solving & Algorithmic Thinking</h2>
+                <p>Skill in dissecting complex problems, designing algorithms, and optimizing code for efficiency, backed by hands-on experience.</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <h2>Software Architecture <br>& Design</h2>
+                <p>Proficiency in designing scalable, maintainable software systems with a focus on architecture, component design, and adherence to best practices.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------project---------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Project</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Pick a Color For Your OOTD</h3>
+                    <p>TUse my random color generator to pick the outfit color of the day! Instantly generate vibrant color palettes for a touch of creativity in your wardrobe selection!</p>
+                    <a href="randomColor.html"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Explore my portfolio website to discover my computer science journey, coding projects, and skills in HTML, CSS, and JavaScript.</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p>Stay tuned for an exciting new project coming soon.</p>
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>dabaiytm@gmail.com</p>
+                <p><i class="fa-brands fa-discord"></i>dabaiytm</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/faye-yao-231775109/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dabaiytm"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>              
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Faye. Made with <i class="fa-brands fa-gratipay"></i></p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");   
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvkOqDSTZkl4wQ679IX8wI9-9m30lMWNZSBlr6zQ23DoyuStGIfqpSxXfvvMnSyDsrpA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
